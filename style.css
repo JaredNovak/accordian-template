@@ -1,0 +1,146 @@
+html {
+  font-size: 16px;
+  background-color: #f7f8fc;
+}
+
+.main-container {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 200px 20px rgba(0, 0, 0, 0.2);
+  margin: 10% auto 10% auto;
+  border-radius: 10px;
+  max-width: 600px;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container h1 {
+  margin-top: 10%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.main-container h2 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 2% 18% 7% 18%;
+}
+
+.accordian-item {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border-bottom: 1px solid rgb(226, 222, 222);
+}
+
+.accordian-item:last-child {
+  border-bottom: none;
+}
+
+.accordian-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.accordian-header p {
+  flex-basis: 95%;
+  color: grey;
+}
+
+.accordian-icon {
+  flex-basis: 5%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.accordian-content {
+  display: none;
+  padding: 0rem 0.1rem 1rem 1rem;
+  font-size: 0.8rem;
+  align-items: flex-start;
+}
+
+.accordian-header:hover {
+  background-color: #f2f2f2;
+}
+
+.accordian-item.active .accordian-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordian-item.active .accordian-content button {
+  border: 2px #636b8b;
+  margin: 20px 0px 10px 0px;
+  padding: 6px 20px 6px 20px;
+  border-radius: 16px;
+  outline: #1e2d69;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #1f080842;
+}
+
+.decoration {
+  max-width: 650px;
+  margin: 10% auto 10% auto;
+}
+
+.circle1 {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  left: 30%;
+  top: 12%;
+  background-color: #e0e9f5;
+  position: absolute;
+}
+
+.circle2 {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  left: 20%;
+  top: 10%;
+  background-color: #e0e9f591;
+  position: absolute;
+}
+
+.circle3 {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  right: 24%;
+  bottom: 8%;
+  background-color: #e0e9f5;
+  position: absolute;
+}
+
+.circle4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  right: 20%;
+  bottom: 5%;
+  background-color: #e0e9f5ab;
+  position: absolute;
+}
+
+@media screen and (max-width: 500px) {
+  .accordian-item {
+    width: 100%;
+  }
+  .main-container {
+    margin: 0%;
+    min-height: 100vh;
+  }
+}
